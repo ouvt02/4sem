@@ -43,7 +43,7 @@ class Fraction:
 		result.reduce()
 		return result
 		
-	def __div__(self, other):
+	def __truediv__(self, other):
 		result = Fraction(0,0)
 		result.numerator = self.numerator * other.denominator
 		result.denominator = self.denominator * other.numerator
